@@ -32,6 +32,6 @@ int main(int argc, char *argv[]) {
 	pH = &hours;
 	pM = &mins;
 	myTime.get(pH, pM);
-	cout << "Design 1 starts at " << mins << " past " << hours;   // display time in another format
+	cout << "Design 1 starts at " << mins << " mins past " << hours << endl;   // display time in another format
 
 }

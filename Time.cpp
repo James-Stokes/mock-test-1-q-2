@@ -16,7 +16,7 @@ void Time::get(int* pH, int* pM) {
 	*pM = minutes;
 }
 
-Time Time::set(int hours, int minutes) {
+void Time::set(int hours, int minutes) {
 	this->hours = hours;
 	this->minutes = minutes;
 }
@@ -36,8 +36,8 @@ Time operator++(Time & oldTime)
 	int mins;
 	pH = &hours;
 	pM = &mins;
-	time.get(pH, pM);
-	time.set(hours, mins++);
+	oldTime.get(pH, pM);
+	oldTime.set(hours, mins++);
 	return time;
 }
 

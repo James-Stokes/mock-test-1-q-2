@@ -12,7 +12,7 @@ public:
 	Time();
 	Time(int, int);
 	void get(int* ,int*);
-	Time set(int, int);
+	void set(int, int);
 	friend ostream& operator<<(ostream&, Time&);
 	friend Time operator++(Time&);
 	~Time();
